@@ -1,6 +1,6 @@
 {
   "name": "blockbuster-design-system",
-  "version": "1.0.0",
+  "version": "1.2.6",
   "description": "Blockbuster but 2020",
   "author": "carbonology",
   "license": "MIT",
@@ -49,5 +49,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "styled-components": "^5.1.0"
+  }
 }
