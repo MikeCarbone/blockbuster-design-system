@@ -20,8 +20,18 @@ const FontSizes = {
     huge: "72px"
 }
 
+const RespFontSizes = {
+    copy: "16px",
+    tiny: "14px",
+    small: "16px",
+    medium: "24px",
+    big: "36px",
+    huge: "48px"
+}
+
 export {
     Colors,
     Fonts,
-    FontSizes
+    FontSizes,
+    RespFontSizes
 };

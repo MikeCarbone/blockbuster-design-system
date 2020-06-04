@@ -1,6 +1,6 @@
 import React from 'react';
 import { createGlobalStyle } from 'styled-components'
-import { Colors, FontSizes } from '../theme';
+import { Colors, FontSizes, RespFontSizes } from '../theme';
 
 const Global = createGlobalStyle`
   :root {
@@ -54,6 +54,20 @@ const Global = createGlobalStyle`
 
   html {
     scroll-behavior: smooth;
+  }
+
+  @media (max-width: 800px) {
+    :root {
+      /* Font sizes */
+      --fontCopy: ${RespFontSizes.copy};
+      --fontTiny: ${RespFontSizes.tiny};
+      --fontSmall: ${RespFontSizes.small};
+      --fontMed: ${RespFontSizes.medium};
+      --fontBig: ${RespFontSizes.big};
+      --fontHuge: ${RespFontSizes.huge};
+
+      --resp-flex-direction: column;
+    }
   }
 `;
 
