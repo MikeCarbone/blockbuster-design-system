@@ -7,9 +7,13 @@ const _Footer = props => (
         <Wrapper>
             <Copy textAlign="center" margin="0 auto">&copy; {new Date().getFullYear()}</Copy>
             <Box justifyContent="center" backgroundColor="transparent">
-                <Link parentEl={props.linkWrapper} color="var(--white)" href="#">Blockbuster Reviews</Link>
-                <Link parentEl={props.linkWrapper} color="var(--white)" href="#">Stream New Content</Link>
-                <Link parentEl={props.linkWrapper} color="var(--white)" href="#">Privacy Policy</Link>
+                <Link color="var(--white)" href="https://blockbuster-one-pager.now.sh/">One-pager</Link>
+                <Link color="var(--white)" href="https://blockbuster-media.now.sh/">Media</Link>
+                <Link color="var(--white)" href="https://blockbuster-streaming.now.sh/">Streaming</Link>
+                <Link color="var(--white)" href="https://github.com/carbonology?tab=repositories">Github</Link>
+                <Link color="var(--white)" href="https://www.npmjs.com/package/blockbuster-design-system">NPM</Link>
+                <Link color="var(--white)" href="https://blockbuster-ds-docs.now.sh/">Docs</Link>
+                <Link color="var(--white)" href="https://blockbuster-case-study.now.sh/">Case Study</Link>
             </Box>
         </Wrapper>
     </Box>

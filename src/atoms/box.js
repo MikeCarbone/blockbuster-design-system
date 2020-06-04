@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const Box = styled.div`
     align-self: ${props => props.alignSelf ? props.alignSelf : 'none'};
+    align-items: ${props => props.alignItems ? props.alignItems : 'initial'};
     background: ${props => props.background ? props.background : 'none'};
     background-size: ${props => props.backgroundSize ? props.backgroundSize : 'cover'};
     background-color: ${props => props.backgroundColor ? props.backgroundColor : '#FFFFFF'};
@@ -23,7 +24,7 @@ const Box = styled.div`
     overflow: hidden;
     overflow-x: ${props => props.overflowX ? props.overflowX : 'hidden'};
     padding: ${props => props.padding ? props.padding : '0'};
-    width: 100%;
+    width: ${props => props.width ? props.width : '100%'};
 `;
 
 const _Box = props => {

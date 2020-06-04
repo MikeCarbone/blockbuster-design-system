@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Img = styled.img`
+    border-radius: ${props => props.borderRadius ? props.borderRadius : "0"};
     display: block;
     filter: ${props => props.filter ? props.filter : "none"};
     height: ${props => props.height ? props.height : "100%"};

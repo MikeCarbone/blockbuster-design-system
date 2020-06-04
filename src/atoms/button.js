@@ -9,9 +9,10 @@ const ButtonPrimary = styled.a`
     cursor: pointer;
     display: inline-block;
     font-family: var(--fontDecorative);
+    font-size: ${props => props.fontSize ? props.fontSize : 'var(--fontSmall)'};
     font-weight: 700;
     margin: ${props => props.margin ? props.margin : '0'};
-    padding: 15px 25px;
+    padding: ${props => props.padding ? props.padding : '15px 25px'};
     text-decoration: none;
     text-transform: uppercase;
 `;
@@ -24,9 +25,10 @@ const ButtonSecondary = styled.a`
     cursor: pointer;
     display: inline-block;
     font-family: var(--fontDecorative);
+    font-size: ${props => props.fontSize ? props.fontSize : 'var(--fontSmall)'};
     font-weight: 700;
     margin: ${props => props.margin ? props.margin : '0'};
-    padding: 15px 25px;
+    padding: ${props => props.padding ? props.padding : '15px 25px'};
     text-decoration: none;
     text-transform: uppercase;
 `;
